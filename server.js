@@ -40,8 +40,8 @@ mongoose.connect(process.env.MONGODB_URL)
 
 app.use("/api/auth",userRouter)
 app.use("/api/job", authenticateUser, jobRouter)
-
-app.listen(3500,()=>{
+const PORT=process.env.PORT||1729
+app.listen(PORT,()=>{
     console.log("Backend is running");
 })
 
