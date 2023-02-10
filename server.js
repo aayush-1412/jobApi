@@ -30,11 +30,11 @@ mongoose
   .then(() => console.log("Db connected"))
   .catch((error) => console.log(error));
 app.get("/", (req, res) => {
-  res.json(
-    { "Welcome to JobApi": "https://github.com/aayush-1412/jobApi" },
-    {
+  res.status(200).json(
+    { "Welcome to JobApi": "https://github.com/aayush-1412/jobApi" ,
+    
       "How to Use? Concatenate this routes at the end of https://jobapi.up.railway.app/ -":
-        [
+        
           {
             "Login (Post route)": "/api/auth/login",
             "Register (Post route) ": "/api/auth/register",
@@ -44,8 +44,9 @@ app.get("/", (req, res) => {
             "Update job (Patch route)": "/api/job/update/:id",
             "Delete job (Delete route)": "/api/job/delete/:id",
           },
-        ],
+        
     }
+  
   );
 });
 app.use("/api/auth", userRouter);
