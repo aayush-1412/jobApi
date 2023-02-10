@@ -30,7 +30,7 @@ mongoose
   .then(() => console.log("Db connected"))
   .catch((error) => console.log(error));
 app.get("/", (req, res) => {
-  res.status(200).json(
+  res.json(
     { "Welcome to JobApi": "https://github.com/aayush-1412/jobApi" },
     {
       "How to Use? Concatenate this routes at the end of https://jobapi.up.railway.app/ -":
