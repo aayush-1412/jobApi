@@ -1,5 +1,5 @@
 import jobModel from "../models/job-model.js";
-import jwt from "jsonwebtoken";
+
 
 export const getSingleJob = async (req, res) => {
   const {
