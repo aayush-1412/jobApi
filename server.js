@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
   res.status(200).json(
     { "Welcome to JobApi": "https://github.com/aayush-1412/jobApi" ,
     
-      "How to Use? Concatenate this routes at the end of https://jobapi.up.railway.app/ -":
+      "How to Use? Concatenate this routes at the end of https://job-api-mnp0.onrender.com/-":
         
           {
             "Login (Post route)": "/api/auth/login",
